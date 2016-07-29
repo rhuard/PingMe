@@ -7,13 +7,12 @@ various methods.
 
 ## Hierarchy
 Tests [contain executable files and unit tests for Probram]
-
 PingMe.py [Executable to call, parses options]
 
 PingMe [Package for PingMe functonality]
- Execute [contains Executor classes these are what allows arbirary execution]
- Ping [Contains Pinger Classes which allow for different notifcation types]
- Reporter [Gets infromation from the Executor and gives to the pinger]
+Execute [contains Executor classes these are what allows arbirary execution]
+Ping [Contains Pinger Classes which allow for different notifcation types]
+Reporter [Gets infromation from the Executor and gives to the pinger]
 
 In order to implement a new Ping Method, implement the Pinger for such a Method
 Then you will need to add the option to the PingMe.py parser
