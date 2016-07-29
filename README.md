@@ -30,6 +30,7 @@ and override the report (which already takes **kwargs so go nuts ;) )
 To implement another Executor inherit from an existing executor and
 override execute Method.
 
+## Current/Planned Functionality
 
 Current Pingers:
 Console
