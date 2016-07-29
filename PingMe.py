@@ -7,7 +7,7 @@ def Setup():
 
     #create parser for options
     parser = optparse.OptionParser()
-    parser.add_option("-r", "--Reporter", dest="report",
+    parser.add_option("-r", "--reporter", dest="report",
                         help="reporter you would like to use")
 
     #create Pinger dictonary
