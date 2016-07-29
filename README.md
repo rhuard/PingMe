@@ -16,6 +16,8 @@ PingMe/Execute [contains Executor classes these are what allows arbirary executi
 PingMe/Ping [Contains Pinger Classes which allow for different notifcation types]
 PingMe/eporter [Gets infromation from the Executor and gives to the pinger]
 
+## Extending
+
 In order to implement a new Ping Method, implement the Pinger for such a Method
 Then you will need to add the option to the PingMe.py parser
 
