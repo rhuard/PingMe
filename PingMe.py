@@ -2,6 +2,7 @@
 import optparse
 import PingMe.Ping.Pinger as P
 import PingMe.Ping.TextPinger as T
+import PingMe.Ping.EmailPinger as E
 
 def Setup():
 
@@ -12,9 +13,11 @@ def Setup():
 
     #create Pinger dictonary
     pingers = {"c": P.Pinger,
-     "Console": P.Pinger,
+     "console": P.Pinger,
      "t": T.TextPinger,
-     "Text": T.TextPinger}
+     "text": T.TextPinger,
+     "e" : E.EmailPinger,
+     "email" : E.EmailPinger}
 
     return parser,pingers
 
