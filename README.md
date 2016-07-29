@@ -5,6 +5,15 @@ The idea is to create a program that will run an arbitray executable.
 Then when done report the time and the status of the executable through
 various methods.
 
+##Usage
+PingMe.py "ls -al" [Lists all directories in the current folder and pings when done]
+
+PingMe.py -c test_wait [runs the file test_wait then pings when done]
+
+### options
+-h, --help [displayes help message]
+-r, --reporter [chooses reporter]
+
 ## Hierarchy
 Tests [contain executable files and unit tests for Probram]
 
@@ -33,7 +42,7 @@ override execute Method.
 ## Current/Planned Functionality
 
 Current Pingers:
-Console
+Console (c or console option)
 
 Planned:
 Text
