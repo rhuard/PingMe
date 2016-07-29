@@ -34,10 +34,14 @@ class Executor():
         Runs the cmd
         """
         start_time = time.time()
-        r_code = subprocess.call(self._execute_cmd,
-                stdin= self._stin,
-                stdout = self._stout,
-                stderr= self._sterr)
+        try:
+            r_code = subprocess.call(self._execute_cmd,
+                    stdin= self._stin,
+                    stdout = self._stout,
+                    stderr= self._sterr)
+        except FileNotFoundError:
+            print(self._execute_cmd[0] + " was not found, could not run process")
+            r_code = -1
         end_time = time.time()
         total_time = end_time - start_time
         self._reporter.Report(rcode = r_code, ttime = total_time)
