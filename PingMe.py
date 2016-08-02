@@ -31,7 +31,7 @@ def Main():
         options.report = "c"
 
     p = pingers[options.report]()
-    p.RunThenPing(args[0])
+    p.RunThenPing(args)
 
 if __name__ == "__main__":
     Main()
