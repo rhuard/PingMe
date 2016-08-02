@@ -18,11 +18,10 @@ class Executor():
         """
         Builds a cmd from all of the args for the executable passed in
         """
-        s = args.split()
-        arg_list = [s[0]]
+        arg_list = [args[0]]
         arg_string = ""
-        for i in range(len(s) - 1):
-            arg_string += s[i + 1] + " "
+        for i in range(len(args) - 1):
+            arg_string += args[i + 1] + " "
 
         arg_string = arg_string[:-1]
         if arg_string is not "":
