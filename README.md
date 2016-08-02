@@ -1,7 +1,7 @@
 # PingMe
  potential-carnival
-
-!(https://travis-ci.org/rhuard/PingMe.svg?branch=master)
+ 
+[![Build Status](https://travis-ci.org/rhuard/PingMe.svg?branch=master)](https://travis-ci.org/rhuard/PingMe)
 
 The idea is to create a program that will run an arbitray executable.
 Then when done report the time and the status of the executable through
