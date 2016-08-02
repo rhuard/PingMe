@@ -11,8 +11,6 @@ class Executor():
         self._sterr = sterr
         self._execute_cmd = self._BuildCmd(args)
         self._reporter = reporter
-        self.Execute()
-
 
     def _BuildCmd(self, args):
         """
@@ -44,3 +42,4 @@ class Executor():
         end_time = time.time()
         total_time = end_time - start_time
         self._reporter.Report(rcode = r_code, ttime = total_time)
+        return r_code
