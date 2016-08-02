@@ -8,8 +8,8 @@ def Setup():
 
     #create parser for options
     parser = optparse.OptionParser()
-    parser.add_option("-r", "--reporter", dest="report",
-                        help="reporter you would like to use")
+    parser.add_option("-p", "--pinger", dest="pinger",
+                        help="pinger you would like to use")
 
     #create Pinger dictonary
     pingers = {"c": P.Pinger,
@@ -27,8 +27,8 @@ def Main():
     (options, args) = parser.parse_args()
 
     #default to Console
-    if options.report == None:
-        options.report = "c"
+    if options.pinger == None:
+        options.pinger = "c"
 
     p = pingers[options.report]()
     p.RunThenPing(args)
