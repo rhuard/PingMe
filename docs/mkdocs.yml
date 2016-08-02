@@ -1,0 +1,5 @@
+site_name: PingMe
+pages:
+- Home: index.md
+- Running: running.md
+theme: readthedocs
