@@ -30,7 +30,12 @@ def Main():
     if options.pinger == None:
         options.pinger = "c"
 
-    p = pingers[options.pinger]()
+    try:
+        p = pingers[options.pinger]()
+    except KeyError:
+        print("That is not a known pinger")
+        exit(-1)
+
     p.RunThenPing(args)
 
 if __name__ == "__main__":
