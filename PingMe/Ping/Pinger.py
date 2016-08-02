@@ -9,3 +9,4 @@ class Pinger():
     def RunThenPing(self, args):
         reporter = BR.BasicReporter()
         e = E.Executor(args, reporter)
+        e.Execute()

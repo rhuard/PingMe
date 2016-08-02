@@ -11,18 +11,15 @@ class Executor():
         self._sterr = sterr
         self._execute_cmd = self._BuildCmd(args)
         self._reporter = reporter
-        self.Execute()
-
 
     def _BuildCmd(self, args):
         """
         Builds a cmd from all of the args for the executable passed in
         """
-        s = args.split()
-        arg_list = [s[0]]
+        arg_list = [args[0]]
         arg_string = ""
-        for i in range(len(s) - 1):
-            arg_string += s[i + 1] + " "
+        for i in range(len(args) - 1):
+            arg_string += args[i + 1] + " "
 
         arg_string = arg_string[:-1]
         if arg_string is not "":
@@ -45,3 +42,4 @@ class Executor():
         end_time = time.time()
         total_time = end_time - start_time
         self._reporter.Report(rcode = r_code, ttime = total_time)
+        return r_code
