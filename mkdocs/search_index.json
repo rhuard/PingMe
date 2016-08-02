@@ -1,0 +1,24 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "PingMe\n\n\nPingMe is a wrapper for an arbitray executable. When the executable is done\nthe wrapper will \"Ping\" you. For example if could send you a text message or an\nemail. Also there will various pieces of information to be reported. For example\nthe run time and the exit code of the executable",
+            "title": "Home"
+        },
+        {
+            "location": "/#pingme",
+            "text": "PingMe is a wrapper for an arbitray executable. When the executable is done\nthe wrapper will \"Ping\" you. For example if could send you a text message or an\nemail. Also there will various pieces of information to be reported. For example\nthe run time and the exit code of the executable",
+            "title": "PingMe"
+        },
+        {
+            "location": "/running/",
+            "text": "Running\n\n\nto run: PingMe [options] \n\n\noptions: -p, --pinger\n\n\nsupported pingers:\n    c, console",
+            "title": "Running"
+        },
+        {
+            "location": "/running/#running",
+            "text": "to run: PingMe [options]   options: -p, --pinger  supported pingers:\n    c, console",
+            "title": "Running"
+        }
+    ]
+}
